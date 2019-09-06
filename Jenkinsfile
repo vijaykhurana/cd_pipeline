@@ -11,9 +11,7 @@ pipeline {
         disableConcurrentBuilds()
     }
 
-	environment {
-		//PYTHONPATH = "${WORKSPACE}/section_4/code/cd_pipeline"
-	}
+	
 
     stages {
 
