@@ -1,8 +1,12 @@
 #!/usr/bin/groovy
 
 pipeline {
-    agent any
-
+	agent {
+	 docker {
+                    image 'python:3-alpine' 
+                }	
+	}
+	
     options {
         disableConcurrentBuilds()
     }
